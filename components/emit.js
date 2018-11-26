@@ -7,7 +7,7 @@ Vue.component('emit', {
     template: `
     <div>
         <h2>Emitir eventos con Vuejs 2</h2>
-        <p @click="$emit('showCarBrand',carBrand)">Pulsa aqui para emitir un evento a la instancia ROOT de Vuejs</p>
+        <p @click="$emit('showcarbrand',carBrand)">Pulsa aqui para emitir un evento a la instancia ROOT de Vuejs</p>
     </div>
 
     `
