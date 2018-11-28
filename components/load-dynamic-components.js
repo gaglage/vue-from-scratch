@@ -16,7 +16,7 @@ Vue.component('load-dynamic-components', {
           <button v-for="cmp in components" @click="changeComponent(cmp)">
               Seleccionar {{ cmp }}
           </button>
-
+          <component :is="currentComponent" />
       </div>
     `
   })
