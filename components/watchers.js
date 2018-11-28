@@ -14,9 +14,9 @@ Vue.component('watchers', {
             try {
                 const data = await fetch('https://randomuser.me/api/');
                 const json = await data.json();
-                const user = json.results[0];
-                console.log(user);
-                this.user = `${user.name.title} ${user.name.first}  ${user.name.last}`
+                const userData = json.results[0];
+                console.log(userData);
+                this.user = `${userData.name.title} ${userData.name.first}  ${userData.name.last}`
                 console.log(this.user);
 
             } catch (error) {
