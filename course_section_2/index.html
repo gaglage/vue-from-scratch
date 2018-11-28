@@ -9,7 +9,7 @@
     <script src="directives/change-styles.js"></script>
 
     <script src="filters/currency-filter.js"></script>
-    
+
     <script src="components/message.js"></script>
     <script src="components/computed-properties.js"></script>
     <script src="components/methods.js"></script>
@@ -25,11 +25,13 @@
     <script src="components/slots.js"></script>
     <script src="components/watchers.js"></script>
     <script src="components/computed-properties-get-set.js"></script>
-    
+
     <script src="components/dynamic-components/cmp1.js"></script>
     <script src="components/dynamic-components/cmp2.js"></script>
     <script src="components/dynamic-components/cmp3.js"></script>
     <script src="components/load-dynamic-components.js"></script>
+
+    
     <script src="components/mixins.js"></script>
     <script src="plugins/aboutMe.js"></script>
     <script src="components/props.js"></script>
@@ -64,18 +66,18 @@
         <mixins></mixins>
         <props name="Israel" surname="Parra" :age="15"></props>
     </div>
-    
+
     <script>
         new Vue({
           el: '#app',
           mounted () {
             const cmpName = this.$refs.childData.cmpName;
             console.log(cmpName);
-            
+
             setTimeout(() => {
               this.$refs.childMethod.showCmpName();
             }, 3000)
-            
+
             console.log(this.$me('Israel', 37));
           },
           data () {
