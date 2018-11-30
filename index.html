@@ -34,6 +34,7 @@
     <script src="components/load-dynamic-components.js"></script>
     <script src="components/mixins.js"></script>
     <script src="components/props.js"></script>
+    <script src="plugins/aboutMe.js"></script>
 </head>
 
 <body>
@@ -63,7 +64,7 @@
         <watchers></watchers>
         <load-dynamic-components></load-dynamic-components>
         <mixins></mixins>
-        <props name="Gabi" surname="Alvarez" :age="2"></props>
+        <props name="Gabi" surname="Alvarez" :age="42"></props>
     </div>
     <script>
         new Vue({
@@ -75,6 +76,7 @@
                 setTimeout(() => {
                     this.$refs.childMethod.showCmpName()
                 }, 3000)
+                console.log(this.$me('gabi',40))
             },
             data() {
                 return {
